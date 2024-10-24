@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "builds": [{
+        "src": "users_admin/src/index.js",
+        "use": "@vercel/node"
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "users_admin/src/index.js"
+    }],
+    "env": {
+        "NODE_ENV": "production"
+    }
+}
